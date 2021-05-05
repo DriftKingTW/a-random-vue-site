@@ -1,18 +1,32 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <input
+      type="text"
+      v-model.trim="userInput"
+      placeholder="type something..."
+    />
+    <ChildComponent :msg="userInput" @clearInput="clearInput()" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import ChildComponent from "@/components/ChildComponent.vue";
 
 export default {
   name: "Home",
+  data() {
+    return {
+      userInput: "",
+    };
+  },
   components: {
-    HelloWorld,
+    ChildComponent,
+  },
+  methods: {
+    clearInput() {
+      this.userInput = "";
+    },
   },
 };
 </script>
