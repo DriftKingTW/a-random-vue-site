@@ -3,17 +3,13 @@
     <h1>This is an user page</h1>
     <button @click="getUser()">Click to fetch users from API</button>
     <p>User count: {{ userCount }}</p>
-    <div v-if="users">
-      <div v-for="(user, index) in users" :key="index">
-        <p>Full Name: {{ user.name }}</p>
-        <p>City: {{ user.city }}</p>
-      </div>
-    </div>
+    <UserList :users="users"></UserList>
   </div>
 </template>
 
 <script>
 import axios from "axios";
+import UserList from "@/components/UserList";
 
 export default {
   name: "user",
@@ -36,6 +32,9 @@ export default {
     userCount() {
       return this.users.length;
     },
+  },
+  components: {
+    UserList,
   },
   metaInfo: {
     title: "User Page",
