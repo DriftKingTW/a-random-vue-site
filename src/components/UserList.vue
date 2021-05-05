@@ -41,6 +41,7 @@ export default {
 
   &:hover {
     box-shadow: 0 8px 16px 0 $light-gray;
+    transform: scale(1.1);
   }
 }
 
