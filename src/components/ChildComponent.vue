@@ -7,7 +7,7 @@
     <p>
       click it to a method in parent component, which will clear the user input.
     </p>
-    <button @click.prevent="$emit('clearInput')">Clear Input</button>
+    <a class="btn effect" @click.prevent="$emit('clearInput')" data-sm-link-text="CLEAR"><span>Clear Input</span></a>
   </div>
 </template>
 

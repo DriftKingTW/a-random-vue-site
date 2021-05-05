@@ -1,10 +1,14 @@
 <template>
   <div class="home">
+    <!-- <div class="form-group"> -->
     <input
       type="text"
+      class="form-input"
       v-model.trim="userInput"
       placeholder="type something..."
+      name="input"
     />
+    <!-- </div> -->
     <ChildComponent :msg="userInput" @clearInput="clearInput()" />
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div class="user">
     <h1>This is an user page</h1>
-    <button @click="getUser()">Click to fetch users from API</button>
+    <a class="btn effect" @click.prevent="getUser()" data-sm-link-text="CLICK"><span>Get Data</span></a>
     <p>User count: {{ userCount }}</p>
     <UserList :users="users"></UserList>
   </div>
