@@ -37,5 +37,6 @@ export default {
       return this.users.length;
     },
   },
+  title: "User Page",
 };
 </script>
