@@ -37,6 +37,12 @@ export default {
       return this.users.length;
     },
   },
-  title: "User Page",
+  metaInfo: {
+    title: "User Page",
+    titleTemplate: "%s - A random vue site",
+    meta: [
+      { name: 'description', content: 'This is a page shows users info.' }
+    ]
+  },
 };
 </script>
