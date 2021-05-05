@@ -7,7 +7,12 @@
     <p>
       click it to a method in parent component, which will clear the user input.
     </p>
-    <a class="btn effect" @click.prevent="$emit('clearInput')" data-sm-link-text="CLEAR"><span>Clear Input</span></a>
+    <a
+      class="btn effect"
+      @click.prevent="$emit('clearInput')"
+      data-sm-link-text="CLEAR"
+      ><span>Clear Input</span></a
+    >
   </div>
 </template>
 
@@ -26,5 +31,4 @@ export default {
 .input-text {
   color: $secondary;
 }
-
 </style>
