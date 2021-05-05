@@ -28,5 +28,6 @@ export default {
       this.userInput = "";
     },
   },
+  title: "Home Page",
 };
 </script>
