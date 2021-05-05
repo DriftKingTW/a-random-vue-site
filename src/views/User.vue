@@ -41,8 +41,8 @@ export default {
     title: "User Page",
     titleTemplate: "%s - A random vue site",
     meta: [
-      { name: 'description', content: 'This is a page shows users info.' }
-    ]
+      { name: "description", content: "This is a page shows users info." },
+    ],
   },
 };
 </script>

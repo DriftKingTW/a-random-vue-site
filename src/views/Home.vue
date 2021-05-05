@@ -31,9 +31,7 @@ export default {
   metaInfo: {
     title: "Home Page",
     titleTemplate: "%s - A random vue site",
-    meta: [
-      { name: 'description', content: 'This is A random vue site.' }
-    ]
+    meta: [{ name: "description", content: "This is A random vue site." }],
   },
 };
 </script>
