@@ -1,12 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import PageNotFound from "../views/PageNotFound.vue";
 import Meta from "vue-meta";
 
 Vue.use(VueRouter);
 Vue.use(Meta);
 
 const routes = [
+  { path: "*", component: PageNotFound },
   {
     path: "/",
     name: "Home",
